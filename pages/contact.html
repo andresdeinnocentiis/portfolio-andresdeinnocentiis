@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../styles/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contact</title>
+</head>
+<body class="b-contact">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><img class="logolink" src="../logos/Logo1c.png" alt="logo"></a>
+            </div>
+            
+            <nav class="nav">
+                <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+                <label for="nav__checkbox" class="nav__toggle">
+                    <i class="fas fa-bars menu"></i>
+                    <i class="fas fa-times close"></i>
+                </label>
+                <ul class="nav__menu">
+                    <div class="bordes">
+                        <li><a class="linkweb"  href="../index.html">Home</a></li>
+                    </div>
+                    <div class="bordes">
+                        <li><a class="linkweb"  href="about.html">About me</a></li>
+                    </div>
+                    <div class="bordes">
+                        <li><a class="linkweb"  href="proyectos.html">Projects</a></li>
+                    </div>
+                    <div class="bordes">
+                        <li><a class="linkweb" href="services.html">Services</a></li>
+                    </div>
+                    <div>
+                        <li><a class="active"  href="contact.html">Contact me</a></li>
+                    </div>   
+                </ul>
+            </nav>         
+        </div>
+    </header>
+    <main class="main m-contact">
+        <div class="container3">
+            <div class="titulo titulo-contact">
+                <h1 class="linkweb">Contact me<span class="animacion-rotar">.</span></h1>
+            </div>
+            <section class="container2 formcont">
+                <form  class="formflex" action="mailto:andresdeinnocentiis@gmail.com" method="POST" enctype="text/plain"> 
+
+                    <input class="form-input box" type="text" name="name" aria-placeholder="Name" placeholder="Name" required>    
+                    <br>
+                    <input class="form-input box" type="email" name="email" aria-placeholder="E-mail" placeholder="E-mail" required> 
+                    <br>
+                    <input class="form-input box" type="text" name="subject" placeholder="Subject">    
+                    <br>
+                    <textarea class="form-input inp-body" name="comment" id="comment" cols="70" rows="15" aria-placeholder="Write your text here..." placeholder="Write your text here..."  required></textarea>
+                    <br><br>
+                    <div class="btns">
+                        <button class="btnform btn1" type="submit" value="Send">Send</button>
+                        <button class="btnform btn2"  type="reset" value="Clear">Clear</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer2">
+        <a href="https://www.instagram.com/andresdeinnocentiis" target=”_blank”><img class="footer--img" src="../imagenes/instagram.png" alt="Instagram"></a> 
+        <a href="https://www.linkedin.com/in/andresdeinnocentiis-pythondeveloper-webdeveloper/" target=”_blank”><img class="footer--img" src="../imagenes/linkedin.png" alt="LinkedIn"></a>  
+        <a href="mailto:andresdeinnocentiis@gmail.com" target=”_blank”><img class="footer--img" src="../imagenes/email.png" alt="Mail"></a>
+    </footer>
+</body>
+</html>
