@@ -34,7 +34,7 @@
 }
 
 
-body {
+.body-i {
     background-color: var(--maincolor1);
     
     padding:0;
@@ -60,9 +60,7 @@ a {
 }
 
 .logolink {
-    margin-top: 1.5rem;
-    padding: 0;
-    width: 3rem;
+    width: 3.5rem;
 }
 
 /* ============================= 
@@ -72,7 +70,7 @@ header {
     margin-bottom: 5rem;
 }
 
-.container {
+.container-i {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: 
@@ -103,6 +101,8 @@ header {
     display: none;
 }
 
+
+
 .nav__menu {
     width: 18rem;
     position:relative;
@@ -130,11 +130,22 @@ header {
 .nav__menu div {
     text-align: center;
 }
+.nav-item {
+    padding: 0;
+    padding-top: 0.1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0rem;
+    margin: 0.5rem 0 0rem 0.5rem;
+}
 
-.nav__menu .active {
+#active {
     color: var(--activelink);
     border-bottom: solid 2px var(--maincolor2hover);
     pointer-events: none;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
 }
 
 #nav__checkbox:checked ~ .nav__menu {
@@ -153,6 +164,23 @@ header {
     
 }
 
+#navbarSupportedContent {
+    width: 100%;
+    
+    
+}
+
+#navbar {
+    display:flex;
+    justify-content: space-between;
+}
+.container-fluid {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+
 
 /* ==================== 
 ========= MAIN ========
@@ -160,7 +188,7 @@ header {
 
 /*--------------------------------INDEX--------------------------------------*/
 
-.main {
+.main-i {
     height: 130vh;
     color:var(--maincolor3);
     display: grid;
@@ -178,6 +206,11 @@ header {
 .container2 {
     grid-area: cntr;
     
+}
+
+.titulo {
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
 .subtitulo-main {
@@ -891,11 +924,11 @@ color: #498d11;
 }
 
 .linkweb {
-    
+    color: var(--maincolor3);
     grid-area:lkwb;
 }
 
-.card {
+.card-i {
     margin: 2rem 0rem 0rem 0rem;
     padding: 2rem;
     border-radius: 30px;
@@ -906,15 +939,15 @@ color: #498d11;
       
 }
 
-.card ul {
+.card-i ul {
     padding-left: 3rem;  
 }
-.card h4 {
+.card-i h4 {
     border-bottom: 2px solid var(--maincolor3hover);
     margin: .5rem 0;
     padding-bottom: .5rem;  
 }
-.card h5 {
+.card-i h5 {
     margin: .5rem 0;
     color:var(--maincolor1light);;
 }
@@ -927,7 +960,7 @@ color: #498d11;
     grid-area: card2;
 }
 
-.row {
+.row-i {
     grid-area: row;
 }
 
@@ -1138,7 +1171,7 @@ img {
         display:none;
     }
 
-    .container {
+    .container-i {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 4rem 0 2rem;
@@ -1194,6 +1227,19 @@ img {
         border-bottom: solid 2px var(--maincolor2hover);
         pointer-events: none;
     }
+
+    #navbar-nav {
+        justify-content: flex-end;
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .milogo {
+        margin-left: 4rem;
+        padding-top: .3rem;
+    }
+
     .saludo, .titulo, .subtitulo, .descripcion>p {
         letter-spacing: 3px;
         padding: 0;
@@ -1265,7 +1311,7 @@ img {
         padding: 0;
         margin:0;
     }
-    .container {
+    .container-i {
         width: 0 auto;
         height: 5rem;
         display: flex;
@@ -1301,13 +1347,8 @@ img {
         padding-bottom: 2px;
     }
 
-    .bordes {
-        border-right: solid 2px var(--maincolor1hover);
-        padding-right: 5px;
-        margin-right: 5px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+
+    
 
     /* ========================= 
     ========== BUTTONS =========
@@ -1380,7 +1421,7 @@ img {
 
 
 
-    .main {
+    .main-i {
         height: 100vh;
         padding-left: 16rem;
         padding-top: 6rem;
@@ -1413,7 +1454,7 @@ img {
         padding: 3rem 16rem;
     }
 
-    .card {
+    .card-i {
         margin: 2rem 0rem 0rem 0rem;
         padding: 3rem;
         border-radius: 0;
@@ -1424,7 +1465,7 @@ img {
           
     }
     
-    .row {
+    .row-i {
         margin:2rem 0;
     }
 
@@ -1546,7 +1587,7 @@ img {
         background-size: cover;
     }
 
-    .row {
+    .row-i {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1560,7 +1601,7 @@ img {
         text-align: start;
     }
 
-    .card {
+    .card-i {
         margin: 2rem 0rem 0rem 0rem;
         padding: 0 0 0 2rem;
         box-shadow: -1px -1px 37px -15px rgba(0,0,0,0.74);
@@ -2318,4 +2359,17 @@ img {
 
 
     
+}
+@media only screen and (min-width:992px){
+    .bordes {
+        border-right: solid 2px var(--maincolor1hover);
+        padding-right: 5px;
+        
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navbar-nav {
+        margin-top: 0rem;
+        font-size: 1rem;
+      }
 }
