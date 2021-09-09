@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-de-innocentiis-andres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/nuevos_estilos/scss/origen.scss styles/nuevos_estilos/css/otros.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresdeinnocentiis/portfolio-andresdeinnocentiis.git"
+  },
+  "author": "andresdeinnocentiis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresdeinnocentiis/portfolio-andresdeinnocentiis/issues"
+  },
+  "homepage": "https://github.com/andresdeinnocentiis/portfolio-andresdeinnocentiis#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
