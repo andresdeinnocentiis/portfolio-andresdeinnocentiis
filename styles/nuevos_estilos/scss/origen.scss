@@ -1,0 +1,218 @@
+/* HOVER & FOCUS  +  OPERACIONES */
+
+/*VARIABLES*/
+$colores:(
+    "maincolor1": #212529,
+    "maincolor1hover": #373c41,
+    "maincolor1light": #73787e,
+    "maincolor2": #D81159,
+    "maincolor2hover": #a72454,
+    "maincolor3": #F7F7FF,
+    "maincolor3hover": #aeaeb9,
+    "activelink": #f7f7ffb9
+);
+
+$size: 20rem;
+
+
+
+/*BOTONES*/
+.btn:hover, .btn:focus{
+    background-color: map-get($colores, maincolor3);
+    color: map-get($colores, maincolor2);
+}
+
+
+.btn1:hover, .btn1:focus{
+    background-color: map-get($colores, maincolor3);
+    color: map-get($colores, maincolor2);
+    cursor: pointer;
+}
+
+.btn2:hover, .btn2:focus{
+    background-color: map-get($colores, maincolor3);
+    color: map-get($colores, maincolor1hover);
+    cursor: pointer;
+}
+
+/*TEXTO & LINKS*/
+
+.linkweb:hover, .linkweb:focus,.linkweb2:hover, .linkweb2:focus {
+    color: map-get($colores, maincolor2);
+}
+
+.pdf:hover {
+    color: map-get($colores, maincolor2hover);
+    text-shadow: -1px 1px map-get($colores, maincolor1);
+}
+
+/*BOXES*/
+.p-boxes h2:hover {
+    text-shadow: 10px -1px map-get($colores, maincolor3hover);
+    z-index: 1;
+} 
+
+
+
+/*FORMULARIO*/
+
+/*
+=========== TABLET ==================
+*/
+@media only screen and (min-width:560px){
+
+    /*BOTONES*/
+    .btn:hover, .btn:focus{
+        background-color: map-get($colores, maincolor3);
+        color: map-get($colores, maincolor2);
+    }
+
+    /*TEXTO & LINKS*/
+
+    .pdf:hover {
+        color: map-get($colores, maincolor2hover);
+        text-shadow: -1px 1px map-get($colores, maincolor1);
+    }
+
+    /*FORMULARIO*/
+
+    .form-input:hover {
+        width: $size*2;
+        border-bottom: 2px solid map-get($colores, maincolor2);
+        
+    }
+
+    .form-input:focus {
+        width: $size*2;
+        outline: none;
+        border-bottom: 2px solid map-get($colores, maincolor2);
+        
+    }
+
+    .inp-body:hover {
+        height: $size;
+        border-right: 2px solid map-get($colores, maincolor2);
+    }
+    .inp-body:focus {
+        width: $size*2;
+        height: $size;
+        border-right: 2px solid map-get($colores, maincolor2);
+    } 
+
+    /*BOXES*/
+
+    .p-boxes:hover {
+        background: rgba(207, 206, 206, 0.3);
+        color: map-get($colores, maincolor1);
+        text-shadow:  0px 0px #212529;
+
+    }
+    .p-boxes h2:hover {
+        text-shadow: 10px -1px map-get($colores, maincolor3hover);
+        z-index: 1;
+    } 
+
+    /*IMAGENES*/
+    .img1:hover{
+        filter: blur(.2px);   
+    }
+    .img2:hover{
+        filter: blur(.2px);   
+    }
+    .img3:hover{
+        filter: blur(.2px);   
+    }
+
+    /*COLUMNAS*/
+    .column2:hover,.column3:hover,.column4:hover {
+        scale: 1.02;
+        box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+        -webkit-box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+        -moz-box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+    }
+
+
+}
+
+/*
+=========== DESKTOP ==================
+*/
+
+@media only screen and (min-width:1138px){
+
+    /*FORMULARIO*/
+    .form-input:hover {
+        width: $size*2;
+        border-bottom: 2px solid map-get($colores, maincolor2);
+        
+    }
+
+    .form-input:focus {
+        width: $size*2;
+        outline: none;
+        border-bottom: 2px solid map-get($colores, maincolor2);
+        
+    }
+
+    .inp-body:hover {
+        height: $size;
+        border-right: 2px solid map-get($colores, maincolor2);
+    }
+    .inp-body:focus {
+        width: $size*2;
+        height: $size;
+        border-right: 2px solid map-get($colores, maincolor2);
+        
+    }
+
+    /*TEXTO & LINKS*/
+
+    .pdf:hover {
+        color: map-get($colores, maincolor2hover);
+        text-shadow: -1px 1px map-get($colores, maincolor1);
+    }
+
+    /*BOTONES*/
+    .btn-i:hover, .btn-i:focus{
+        background-color: map-get($colores, maincolor3);
+        color: map-get($colores, maincolor2);
+    }
+
+    /*COLUMNAS*/
+    .column2:hover,.column3:hover,.column4:hover {
+        scale: 1.02;
+        box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+        -webkit-box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+        -moz-box-shadow: 0px 0px 24px -5px rgba(255,255,255,0.91);
+    }
+
+    
+
+    /*BOXES*/
+    .p-boxes:hover {
+        background: rgba(207, 206, 206, 0.3);
+        color: map-get($colores, maincolor1);
+        text-shadow:  0px 0px #212529;
+
+    }
+
+    .p-boxes h2:hover {
+        text-shadow: 10px -1px map-get($colores, maincolor3hover);
+        z-index: 1;
+    } 
+
+    /*IMAGENES*/
+
+    .img1:hover{
+        filter: blur(.2px);   
+    }
+
+    .img2:hover{
+        filter: blur(.2px);   
+    }
+
+    .img3:hover{
+        filter: blur(.2px);   
+    }
+
+}

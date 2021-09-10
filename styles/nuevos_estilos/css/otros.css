@@ -1,0 +1,128 @@
+/* HOVER & FOCUS  +  OPERACIONES */
+/*VARIABLES*/
+/*BOTONES*/
+.btn:hover, .btn:focus {
+  background-color: #F7F7FF;
+  color: #D81159; }
+
+.btn1:hover, .btn1:focus {
+  background-color: #F7F7FF;
+  color: #D81159;
+  cursor: pointer; }
+
+.btn2:hover, .btn2:focus {
+  background-color: #F7F7FF;
+  color: #373c41;
+  cursor: pointer; }
+
+/*TEXTO & LINKS*/
+.linkweb:hover, .linkweb:focus, .linkweb2:hover, .linkweb2:focus {
+  color: #D81159; }
+
+.pdf:hover {
+  color: #a72454;
+  text-shadow: -1px 1px #212529; }
+
+/*BOXES*/
+.p-boxes h2:hover {
+  text-shadow: 10px -1px #aeaeb9;
+  z-index: 1; }
+
+/*FORMULARIO*/
+/*
+=========== TABLET ==================
+*/
+@media only screen and (min-width: 560px) {
+  /*BOTONES*/
+  .btn:hover, .btn:focus {
+    background-color: #F7F7FF;
+    color: #D81159; }
+  /*TEXTO & LINKS*/
+  .pdf:hover {
+    color: #a72454;
+    text-shadow: -1px 1px #212529; }
+  /*FORMULARIO*/
+  .form-input:hover {
+    width: 40rem;
+    border-bottom: 2px solid #D81159; }
+  .form-input:focus {
+    width: 40rem;
+    outline: none;
+    border-bottom: 2px solid #D81159; }
+  .inp-body:hover {
+    height: 20rem;
+    border-right: 2px solid #D81159; }
+  .inp-body:focus {
+    width: 40rem;
+    height: 20rem;
+    border-right: 2px solid #D81159; }
+  /*BOXES*/
+  .p-boxes:hover {
+    background: rgba(207, 206, 206, 0.3);
+    color: #212529;
+    text-shadow: 0px 0px #212529; }
+  .p-boxes h2:hover {
+    text-shadow: 10px -1px #aeaeb9;
+    z-index: 1; }
+  /*IMAGENES*/
+  .img1:hover {
+    filter: blur(0.2px); }
+  .img2:hover {
+    filter: blur(0.2px); }
+  .img3:hover {
+    filter: blur(0.2px); }
+  /*COLUMNAS*/
+  .column2:hover, .column3:hover, .column4:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91);
+    -webkit-box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91);
+    -moz-box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91); } }
+
+/*
+=========== DESKTOP ==================
+*/
+@media only screen and (min-width: 1138px) {
+  /*FORMULARIO*/
+  .form-input:hover {
+    width: 40rem;
+    border-bottom: 2px solid #D81159; }
+  .form-input:focus {
+    width: 40rem;
+    outline: none;
+    border-bottom: 2px solid #D81159; }
+  .inp-body:hover {
+    height: 20rem;
+    border-right: 2px solid #D81159; }
+  .inp-body:focus {
+    width: 40rem;
+    height: 20rem;
+    border-right: 2px solid #D81159; }
+  /*TEXTO & LINKS*/
+  .pdf:hover {
+    color: #a72454;
+    text-shadow: -1px 1px #212529; }
+  /*BOTONES*/
+  .btn-i:hover, .btn-i:focus {
+    background-color: #F7F7FF;
+    color: #D81159; }
+  /*COLUMNAS*/
+  .column2:hover, .column3:hover, .column4:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91);
+    -webkit-box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91);
+    -moz-box-shadow: 0px 0px 24px -5px rgba(255, 255, 255, 0.91); }
+  /*BOXES*/
+  .p-boxes:hover {
+    background: rgba(207, 206, 206, 0.3);
+    color: #212529;
+    text-shadow: 0px 0px #212529; }
+  .p-boxes h2:hover {
+    text-shadow: 10px -1px #aeaeb9;
+    z-index: 1; }
+  /*IMAGENES*/
+  .img1:hover {
+    filter: blur(0.2px); }
+  .img2:hover {
+    filter: blur(0.2px); }
+  .img3:hover {
+    filter: blur(0.2px); } }
