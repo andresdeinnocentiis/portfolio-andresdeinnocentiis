@@ -83,13 +83,17 @@ $size: 20rem;
     /*FORMULARIO*/
 
     .form-input:hover {
-        width: $size*2;
+        width: $size*1.2;
+        max-width: 100%;
+        margin-right: 1rem;
         border-bottom: 2px solid map-get($colores, maincolor2);
         
     }
 
     .form-input:focus {
-        width: $size*2;
+        width: $size*1.2;
+        max-width: 100%;
+        margin-right: 1rem;
         outline: none;
         border-bottom: 2px solid map-get($colores, maincolor2);
         
@@ -100,7 +104,9 @@ $size: 20rem;
         border-right: 2px solid map-get($colores, maincolor2);
     }
     .inp-body:focus {
-        width: $size*2;
+        width: $size*1.2;
+        max-width: 100%;
+        margin-right: 1rem;
         height: $size;
         border-right: 2px solid map-get($colores, maincolor2);
     } 
@@ -149,12 +155,16 @@ $size: 20rem;
     /*FORMULARIO*/
     .form-input:hover {
         width: $size*2;
+        max-width: 100%;
+        margin-right: 1rem;
         border-bottom: 2px solid map-get($colores, maincolor2);
         
     }
 
     .form-input:focus {
         width: $size*2;
+        max-width: 100%;
+        margin-right: 1rem;
         outline: none;
         border-bottom: 2px solid map-get($colores, maincolor2);
         
@@ -162,11 +172,15 @@ $size: 20rem;
 
     .inp-body:hover {
         height: $size;
+        max-width: 100%;
+        margin-right: 1rem;
         border-right: 2px solid map-get($colores, maincolor2);
     }
     .inp-body:focus {
         width: $size*2;
+        max-width: 100%;
         height: $size;
+        margin-right: 1rem;
         border-right: 2px solid map-get($colores, maincolor2);
         
     }
