@@ -17,6 +17,12 @@ $size: 20rem;
 
 
 /*BOTONES*/
+
+.btn-i:hover, .btn-i:focus{
+    background-color: map-get($colores, maincolor3);
+    color: map-get($colores, maincolor2);
+}
+
 .btn:hover, .btn:focus{
     background-color: map-get($colores, maincolor3);
     color: map-get($colores, maincolor2);

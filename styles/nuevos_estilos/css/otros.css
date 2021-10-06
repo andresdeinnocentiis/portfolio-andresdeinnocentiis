@@ -1,6 +1,10 @@
 /* HOVER & FOCUS  +  OPERACIONES */
 /*VARIABLES*/
 /*BOTONES*/
+.btn-i:hover, .btn-i:focus {
+  background-color: #F7F7FF;
+  color: #D81159; }
+
 .btn:hover, .btn:focus {
   background-color: #F7F7FF;
   color: #D81159; }
