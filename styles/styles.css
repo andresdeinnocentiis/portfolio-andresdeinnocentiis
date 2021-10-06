@@ -1773,6 +1773,11 @@ img {
         align-items: flex-start;
     }
 
+    .contcont {
+        padding-left: 15%;
+        flex-wrap: wrap;
+    }
+
     .p-space {
         padding-bottom: 5rem;
     }
